@@ -1,0 +1,39 @@
+{
+  "name": "chromeExtensionV3",
+  "version": "0.0.1",
+  "description": "chromeExtensions base on v3&vite&react",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "storage",
+    "declarativeContent"
+  ],
+  "host_permissions": [],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    }
+  ],
+  "action": {
+    "default_icon": "/images/app.png",
+    "default_popup": "index.html",
+    "default_title": "React CRX V3"
+  }
+}
