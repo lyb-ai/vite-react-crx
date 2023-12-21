@@ -11,7 +11,9 @@
       "matches": [
         "<all_urls>"
       ],
-      "css": [],
+      "css": [
+        "content.css"
+      ],
       "js": [
         "content.js"
       ],
@@ -32,8 +34,19 @@
     }
   ],
   "action": {
-    "default_icon": "/images/app.png",
+    "default_icon": {
+      "16": "/images/app.png",
+      "32": "/images/app.png",
+      "48": "/images/app.png",
+      "128": "/images/app.png"
+    },
     "default_popup": "index.html",
     "default_title": "React CRX V3"
+  },
+  "icons": {
+    "16": "/images/app.png",
+    "32": "/images/app.png",
+    "48": "/images/app.png",
+    "128": "/images/app.png"
   }
 }

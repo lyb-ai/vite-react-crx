@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { CRX_OUTDIR, CRX_CONTENT_OUTDIR, CRX_BACKGROUND_OUTDIR } from './globalConfig';
+import { CRX_OUTDIR, CRX_CONTENT_OUTDIR, CRX_BACKGROUND_OUTDIR } from './globalConfig.js';
 
 const copyDirectory = (src, dest) => {
   if (!fs.existsSync(dest)) {
